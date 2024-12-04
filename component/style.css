@@ -5,6 +5,9 @@
     font-family:"Poppins", sans-serif;
     box-sizing: border-box;
 }
+html{
+    font-size: 16px;
+}
 :root{
     --main:#CF2E2E;
 }
@@ -132,6 +135,9 @@
 }
 /* for repsonsive */
 @media (max-width:1200px){
+    html{
+        font-size: 14px;
+    }
     .nav{
         padding:20px 15px;
     }
@@ -139,6 +145,8 @@
         display: none;
     }
     .noti{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

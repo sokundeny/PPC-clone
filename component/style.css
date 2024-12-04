@@ -58,6 +58,9 @@
     border:0px;
     cursor: pointer;
 }
+.noti{
+    display: none;
+}
 .ruler{
     
     background-color: black;
@@ -126,4 +129,16 @@
     color: white;
     font-size: 1rem;
     text-align: center;
+}
+/* for repsonsive */
+@media (max-width:1200px){
+    .nav{
+        padding:20px 15px;
+    }
+    .menu ul{
+        display: none;
+    }
+    .noti{
+        display: block;
+    }
 }

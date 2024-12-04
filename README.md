@@ -1,9 +1,8 @@
 # PPCFC
 
 ## Instructions
-- You can use nav and footer to your page from the component , i'va already made it.
+- You can use nav and footer to your page from the component.
 - Every button have to be clickable.
-##Page rule
 ## Page Rules
 - **Home**: Deny 
 - **About**: Theara.

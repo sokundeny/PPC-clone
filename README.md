@@ -1,11 +1,14 @@
-##Some Instruction
-You can use nav and footer to your page from the component , i'va already made it.
-Every button have to be clickable.
-##Page rule
-Home:Deny
-About:Theara
-fixture:Rithea
-Player:Methy+Bunleap
-News:Deny
-Membership:Theara
-Stadium:Theara
+# PPCFC
+
+## Instructions
+- **Reusing Components**: Use the pre-built `nav` and `footer` components in your page for consistency.
+- **Button Functionality**: Ensure that every button on the page is fully clickable and linked to its appropriate function or page.
+
+## Page Rules
+- **Home**: Deny 
+- **About**: Theara.
+- **Fixture**: Rithea.
+- **Player**: Methy and Bunleap.
+- **News**: Deny.
+- **Membership**: Theara.
+- **Stadium**: Theara.

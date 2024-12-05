@@ -141,12 +141,17 @@ html{
     .nav{
         padding:20px 15px;
     }
-    .menu ul{
+    .menu ul li:not(:last-child){
         display: none;
     }
     .noti{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .flag{
+        position: fixed;
+        bottom: 30px;;
+        right: 10px;
     }
 }

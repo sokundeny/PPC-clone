@@ -1,0 +1,482 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    height:3300px;
+    gap:10px;
+}
+.seniorteam{
+    display: flex;
+    background-color:#DB5150;
+    max-width: 100%;
+    max-height: 400px;
+    justify-content:center;
+    margin-top: 70px;
+    margin-left: 8%;
+    margin-right:8%;
+    flex-grow: 1;
+    border-radius: 20px;
+}
+.seniorteam h1{
+    display: flex;
+    font-size: 4.5rem;
+    font-family:"Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text1{
+    display: flex;
+    height: 52px;
+    max-width:1280px;
+    justify-content: flex-start;
+    margin:0px 8% 0px 8%;
+}
+.text1 h2{
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+}
+.def{
+    display: flex;
+    /* flex-grow: 1; */
+    background-color:white;
+    width:1280px;
+    height:566px ;
+    margin:0px 8% 0px 8%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Forward{
+    display: flex;
+    background-color:white;
+    width:1280px;
+    height:566px ;
+    margin:0px 8% 0px 8%;
+    flex-wrap: wrap;
+    column-gap: 13px;
+    
+}
+.card1{
+    position: relative;
+    align-items: flex-end;
+    flex-wrap: wrap;    
+    display: flex;
+    border-radius: 15px;
+    width: 243px;
+    height:275px;
+}
+
+.card1 img{
+    margin-bottom: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mid{
+    display: flex;
+    background-color:white;
+    width:1280px;
+    height:566px ;
+    margin:0px 8% 0px 8%;
+    flex-wrap: wrap;
+    gap:15px;
+    column-gap: 13px;
+}
+.gar{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    width: 243px;
+    height:84px;
+    background: linear-gradient(
+    to bottom,
+    rgba(111, 90, 90, 0.01), /* White at the top */
+    rgba(168, 25, 25, 0.5),   /* Red in the middle */
+    rgba(103, 9, 9, 0.8)      /* Black at the bottom */
+  );
+}
+.gar h1{
+    position:absolute;bottom:-30px; left:5px; font-weight: 700; font-size: 48px;color:white; font-family: "Poppins", sans-serif;
+}
+.gar h2{
+    position:absolute;bottom:20px;; font-weight:700; font-size: 18px; left:50px;color:white; font-family: "Poppins", sans-serif;
+}
+.gar p{
+    position:absolute;bottom:0px;; font-weight: 350; font-size:16px;left:50px;color:white; font-family:"Poppins", sans-serif;
+
+}
+.nav{
+    padding: 2px;
+    height: 62px;
+    width: 100%;
+    background-color:#CF2E2E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:fixed;
+    z-index:2;
+}
+.logo{
+    margin-left: -3.5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:10px;
+}
+.clogo{
+    height: 45px;
+    width: 45px;
+}
+.clogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.smart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5PX 0 0 -5PX;
+}
+.smart img{
+    width:145%;
+    height: 145%;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+}
+.menu ul li a{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color:white;
+}
+.menu ul li button{
+    background-color: #EABD08;
+    padding: 10px 25px;
+    border-radius: 5rem;
+    border:0px;
+    cursor: pointer;
+}
+.noti{
+    display: none;
+}
+.ruler{
+    background-color: black;
+    height: 64px;
+    width:2px;
+    opacity: 0.2;
+    border-radius: 5rem;
+}
+.flag{
+    margin-RIGHT: -50PX;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 3px white;
+}
+.flag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:fill;
+}
+.sponsor_footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.sponsor_background{
+    width: 100%;
+    height: 100vh;
+    filter: blur(30px);
+}
+.sponsor_background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sponsor{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.sponsor img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+.sponsor_background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer_for_text{
+    font-family: "Poppins", sans-serif;
+    background-color:#CF2E2E;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    bottom: -20%;
+    justify-content: center;
+}
+.f_text p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+ *{
+        font-size:16px;
+}
+
+@media (max-width:1000px){
+    html{
+        font-size: 14px;
+    }
+    .seniorteam{
+       display: flex;
+       flex: 1 1 350px;
+    }
+    .nav{
+        position: fixed;
+        padding:10px;
+    }
+    .menu ul li:not(:last-child){
+        display: none;
+    }
+    .noti{
+        display: flex;
+        margin-right: -250px;
+    }
+    .flag{
+        position: fixed;
+        bottom: 30px;;
+        right: 30px;
+    }
+    .def{
+      width: 100%;
+       row-gap: 45px;
+       height: auto;
+       display: grid;
+       grid-template-columns:repeat(2,1fr);
+       grid-template-rows: repeat(5,5fr);
+    }
+    .mid{
+       width: 100%;
+       gap:10px;
+       row-gap: 45px;
+       height: auto;
+       display: grid;
+       grid-template-columns:repeat(2,1fr);
+       grid-template-rows: repeat(4,5fr);
+    }
+    .Forward{
+       width: 100%;
+       gap:10px;
+       row-gap: 45px;
+       height: auto;
+       display: grid;
+       grid-template-columns:repeat(2,1fr);
+       grid-template-rows: repeat(5,5fr);
+    }
+    .card1{
+        display: flex;
+        background-color: #CF2E2E;
+        width: 660px;
+        height: 500px;  
+        justify-content: center;
+    }
+    .card1 img{
+        height:500px;
+        width: 100%;
+    }
+    .gar{
+        background: linear-gradient(
+            to bottom,
+            rgba(111, 90, 90, 0.02), /* White at the top */
+            rgba(168, 25, 25, 0.6),   /* Red in the middle */
+            rgba(103, 9, 9, 0.8)      /* Black at the bottom */
+          );
+        height: 100px;
+        width: 660px;
+        margin-bottom: -30px;
+    }
+    .gar h1{
+         font-size: 60px;
+    }
+    .gar h2{
+        margin-left: 15px;
+         font-size: 30px; 
+    }
+    .gar p{
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size:26px;
+}
+.seniorteam h1{
+    max-width: 100%;
+    max-height: 400px;
+    flex-grow: 1;   
+}}
+
+@media (max-width:1024px){
+    html{
+        font-size: 20px;
+    }
+    .menu ul li a{
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .nav{
+        position:sticky !important;
+        padding: 10px;
+    }
+    .logo{
+        margin-left: -120px;
+    }
+    .flag{
+    }
+    .container{
+        height: 4000px;
+        width:1380px;
+    }
+  .seniorteam {
+       margin-top: 1%;
+       margin-left: 0;
+       margin-right: -10px;
+  }
+  .text1{
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .def{
+    margin-left: 30px;
+  }
+  .mid{
+    margin-left: 30px;
+
+  }
+  .Forward{
+    margin-left: 30px;  
+  }
+   .sponsor_footer{
+    bottom:-5%;
+    height: 70px;    
+  }
+  .footer_for_text{
+    display: flex;
+    position: absolute;
+    bottom:-2100%;
+  }
+
+}
+@media (max-width:766px){
+    html{
+        font-size: 14px;
+    }
+    .seniorteam{
+       display: flex;
+       flex: 1 1 350px;
+    }
+    .nav{
+        position: fixed;
+        padding:10px;
+    }
+    .menu ul li:not(:last-child){
+        display: none;
+    }
+    .noti{
+        display: flex;
+        margin-right: -250px;
+    }
+    .flag{
+        position: fixed;
+        bottom: 30px;;
+        right: 30px;
+    }
+    .def{
+      width: 100%;
+       row-gap: 45px;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+      
+    }
+    .mid{
+       width: 100%;
+       gap:10px;
+       row-gap: 45px;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+       
+    }
+    .Forward{
+       width: 100%;
+       gap:10px;
+       row-gap: 45px;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    .card1{
+        display: flex;
+        background-color: #CF2E2E;
+        width: 98%;
+        height: 600px;  
+        justify-content: center;
+    }
+    .card1 img{
+        height:600px;
+        width: 100%;
+    }
+    .gar{
+        background: linear-gradient(
+            to bottom,
+            rgba(111, 90, 90, 0.02), /* White at the top */
+            rgba(168, 25, 25, 0.6),   /* Red in the middle */
+            rgba(103, 9, 9, 0.8)      /* Black at the bottom */
+          );
+        height: 100px;
+        width: 100%;
+        margin-bottom: -30px;
+    }
+    .gar h1{
+         font-size: 60px;
+    }
+    .gar h2{
+        margin-left: 15px;
+         font-size: 30px; 
+    }
+    .gar p{
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size:26px;
+}
+.seniorteam h1{
+    max-width: 100%;
+    max-height: 400px;
+    flex-grow: 1;   
+}}

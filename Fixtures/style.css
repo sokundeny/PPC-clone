@@ -213,7 +213,9 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem; /* 24px */
-    background-color: #9D3E3D;
+    /* background-color: rgba(90, 0, 0, 0.8);  */
+    background-color: #913736;
+    backdrop-filter: blur(64px);
     align-items: center;
 }
 
@@ -239,9 +241,10 @@ main {
 }
 
 .event-card-lower {
-    background-color: #913736;
+    background-color: #973a3a;
     padding: 1.25rem; /* 20px */
     position: relative;
+    backdrop-filter: blur(64px);
 }
 
 .event-card-lower h2 {

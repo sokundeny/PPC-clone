@@ -1,4 +1,4 @@
-# PPCFC
+# PPCFC Trust the process
 - website for clone: ppcfc.com
 ## Instructions
 - You can use nav and footer to your page from the component.

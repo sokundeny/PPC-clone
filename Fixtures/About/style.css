@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+[lang="km"] {
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-family:"Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --main:#CF2E2E;
+}
+
+/* for Nav */
+.nav{
+    height: 64px;
+    width: 100%;
+    background-color:var(--main);
+    padding:20px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index:999;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:10px;
+}
+
+.clogo{
+    height: 50px;
+    width: 50px;
+}
+
+.clogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.smart img{
+    width:120%;
+    height: 120%;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:white;
+}
+
+.menu ul li button{
+    background-color: #EABD08;
+    padding: 10px 25px;
+    border-radius: 5rem;
+    border:0px;
+    cursor: pointer;
+}
+
+.noti{
+    display: none;
+}
+
+.ruler{
+    
+    background-color: black;
+    height: 64px;
+    width:2px;
+    opacity: 0.2;
+    border-radius: 5rem;
+}
+
+.flag{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 3px white;
+}
+
+.flag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:fill;
+}
+
+main {
+    margin-top: 4rem;
+    flex-grow: 1;
+
+}
+
+.container {
+    padding-top: 1.25rem; /* 20px */
+    padding-bottom: 1.25rem; /* 20px */
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.another-container {
+    padding: 1.25rem; /* 20px */
+}
+
+.another-container h1 {
+    font-weight: 700;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+    margin-top: 1rem; /* 16px */
+    margin-bottom: 1rem; /* 16px */
+}
+
+.match-box {
+    background-color: white;
+    position: relative;
+    margin-top: 1rem; /* 16px */
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: .75rem;
+    overflow: hidden;
+    border-color: hsl(0, 74.38%, 60.2%);
+}
+
+.match-box-information {
+    position: relative;
+    overflow: hidden;
+}
+
+.match-box-info-upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.league-logo {
+    max-width: fit-content;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+
+}
+
+#ImageUpper {
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    width: 8rem;
+    height: auto;
+    border-radius: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+    display: block;
+    
+}
+
+#ImageLower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(16px) saturate(150%); 
+    /* transform: scale(1.05) translateY(4px);  */
+    /* filter: saturate(150%); */
+    opacity: 0.3    ;
+    border-radius: 0; 
+    z-index: 0;
+}
+
+.match-box-info-lower {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.match-box-lower-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-one-logo {
+    position: relative;
+    box-shadow: none;
+    border-radius: none;
+    max-width: fit-content;
+}
+
+#TeamLogoUpper {
+    position: relative;
+    z-index: 10;
+    /* opacity: 0;  */
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;  */
+    /* transition: transform 300ms, opacity 300ms;  */
+    border-radius: 0;
+    height: auto;
+    object-fit: contain; 
+    width: 7rem;
+    margin-bottom: 0;   
+    margin-top: 1rem;
+
+}
+
+#TeamLogoLower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(16px) saturate(1.5); 
+    opacity: 0.3; /* 30% opacity */
+    transform: scale(1.05) translateY(4px); 
+    border-radius: 0; 
+    z-index: 0; 
+}
+
+.match-box-lower-left p {
+    display: block;
+    font-weight: 900;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.match-box-lower-center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-box-lower-center h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.match-box-lower-center h3 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.match-box-lower-center h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: hsl(0, 63.64%, 49.61%);
+}
+
+.match-box-lower-right {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-two-logo {
+    position: relative;
+    box-shadow: none;
+    border-radius: none;
+    max-width: fit-content;
+}
+
+.match-box-lower-right p {
+    display: block;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.match-box-footer {
+    background-color: rgba(223, 79, 79, 0.1);
+}
+
+.match-location {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-location h3{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgba(17, 24, 28, 1);
+    font-weight: 700;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.jol-kneakney-button  button {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: hsl(48.050, 93.39%, 47.45%);
+    border-radius: 9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+    min-width: 6rem;
+    width: 100%;
+    height: 3rem;
+    display: inline-flex;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    padding: 0 1.5rem;
+    border-style: none;
+}
+
+/* for footer */
+.sponsor_footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: hsla(0, 63.64%, 49.61%, 0.05);
+}
+
+.sponsor_background{
+    width: 100%;
+    height: 100vh;
+    filter: blur(30px);
+}
+
+.sponsor_background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sponsor{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.sponsor img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.sponsor_background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer_for_text{
+    background-color:var(--main);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f_text p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* for repsonsive */
+@media (max-width:1200px){
+    html{
+        font-size: 14px;
+    }
+    .nav{
+        padding:20px 15px;
+    }
+    .menu ul li:not(:last-child){
+        display: none;
+    }
+    .noti{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flag{
+        position: fixed;
+        bottom: 30px;;
+        right: 10px;
+    }
+}

@@ -240,6 +240,7 @@ html{
     box-sizing: content-box;
     /* transform: translate3d(-231.959px, 0px, 0px); */
     /* transform: translateZ(0); */
+    padding:10px;
     
 }
 

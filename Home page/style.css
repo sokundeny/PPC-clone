@@ -315,7 +315,6 @@ html{
     font-weight: 700;
     
 }
-
 .match-date {
     font-size: 0.875rem; /* 14px */
     line-height: 1.25rem; /* 20px */
@@ -333,8 +332,7 @@ html{
     color: white;
     opacity: 0.7;
 }
-
-.swiper-pagination {
+.swiper-pagination1 {
     bottom: 8px;
     top: 465px;
     left: 0;
@@ -345,7 +343,7 @@ html{
     z-index: 10;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active1 {
     height: 8px;
     width: 20px;
     margin: 0 4px;
@@ -354,7 +352,7 @@ html{
     display: inline-block;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination-bullet1 {
     width: 8px;
     height: 8px;
     margin: 0 1.5px;
@@ -577,6 +575,74 @@ html{
     font-size: 1rem;
     text-align: center;
 }
+.player{
+    background-image: url(../player/img/takaki\ ose\ 3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+.player1{
+    background-image: url(../player/img/Chin\ vinen\ 4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+.player2{
+    background-image: url(../player/img/Chom\ sokhay\ 5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+.player3{
+    background-image: url(../player/img/Yudai\ ogawa\ 6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+.player4{
+    background-image: url(../player/img/Yeu\ muslim\ 7.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+.player_back{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(111, 90, 90, 0.01), /* White at the top */
+        rgba(168, 25, 25, 0.5),   /* Red in the middle */
+        rgba(103, 9, 9, 0.8)      /* Black at the bottom */
+      );
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:20px;
+    padding:10px;
+}
+.player_back_number h1{
+    font-size: 2.8rem;
+    color: white;
+}
+.player_back_text h1{
+    color: white;
+}
+.player_back_text h1:first-child{
+    font-size:1.3rem;
+}
+.player_back_text h1:last-child{
+    font-size:1rem;
+}
 /* for repsonsive */
 @media (max-width:1200px){
     html{
@@ -662,6 +728,9 @@ html{
         position: fixed;
         bottom: 30px;;
         right: 10px;
+    }
+    .piv{
+        display: none;
     }
 }
 @media (min-width:1200px){

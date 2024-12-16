@@ -59,10 +59,14 @@ body{
     gap:20px;
 }
 .menu ul li a{
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     font-size: 1rem;
     color:white;
+}
+.menu ul li button a{
+    color:black;
 }
 .menu ul li button{
     background-color: #EABD08;

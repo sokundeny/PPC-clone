@@ -60,11 +60,16 @@ body {
     object-fit: contain;
 }
 
-.smart img{
-    width:120%;
-    height: 120%;
+.smart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5PX 0 0 -5PX;
 }
-
+.smart img{
+    width:145%;
+    height: 145%;
+}
 .menu ul{
     list-style-type: none;
     display: flex;

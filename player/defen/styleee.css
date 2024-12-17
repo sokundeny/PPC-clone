@@ -16,17 +16,18 @@ body{
     height:570px;
 }
 .nav{
-    height: 62px;
+    box-sizing: border-box;
+    height: 64px;
     width: 100%;
     background-color:#CF2E2E;
+    padding:20px 150px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    position:fixed;
-    z-index:2;
+    justify-content: space-between;
+    position: fixed;
+    z-index:999;
 }
 .logo{
-    margin-left: -3.5%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -48,8 +49,8 @@ body{
     margin:5PX 0 0 -5PX;
 }
 .smart img{
-    width:140%;
-    height: 140%;
+    width:145%;
+    height: 145%;
 }
 .menu ul{
     list-style-type: none;

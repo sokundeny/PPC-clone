@@ -42,10 +42,15 @@ html{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}.smart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5PX 0 0 -5PX;
 }
 .smart img{
-    width:120%;
-    height: 120%;
+    width:145%;
+    height: 145%;
 }
 .menu ul{
     list-style-type: none;

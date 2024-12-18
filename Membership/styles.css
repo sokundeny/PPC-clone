@@ -19,15 +19,17 @@ html{
     padding:20px 150px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     z-index:999;
+    top:0;
+    left:0;
 }
 .logo{
     display: flex;
     justify-content: start;
     align-items: center;
-    gap:1rem;
+    gap:10px;
 }
 .clogo{
     height: 50px;

@@ -79,6 +79,9 @@ html{
     border:0px;
     cursor: pointer;
 }
+.menu ul li button a{
+    color: var(--word);
+}
 .noti{
     display: none;
 }

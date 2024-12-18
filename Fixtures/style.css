@@ -48,7 +48,10 @@ body {
     align-items: center;
     gap:10px;
 }
-
+a{
+    color:black;
+    text-decoration: none;
+}
 .clogo{
     height: 50px;
     width: 50px;

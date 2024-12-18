@@ -19,7 +19,7 @@ html{
     padding:20px 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     z-index:999;
 }
@@ -109,7 +109,7 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 78vh;
     width: 100vw;
     position: relative;
 }
@@ -120,14 +120,14 @@ html{
     text-align: center;
 }
 .text-center h2{
-    font-size: 4rem;
+    font-size: 60px;
     margin-bottom: 3rem;
     line-height: 1;
     font-weight: 900;
     text-transform: capitalize;
 }
 .text-center p {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -146,7 +146,9 @@ html{
     margin-left: auto;
     margin-right: auto;
     border-radius: 1.5rem;
-    width: 68%;
+    align-content: center;
+    max-width: 1025px;
+    height: 800px;
 }
 .each-area{
     display: grid;
@@ -311,12 +313,25 @@ html{
     text-align: center;
 }
 /* for repsonsive */
-@media (max-width:1024px){
-    html{
-        font-size: 16px;
-    }
+@media (max-width: 1200px){
     .nav{
-        padding:20px 15px;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+    .member-type h3:first-child{
+        font-size: 24px;
+    }
+    .member-type h3:last-child{
+        font-size: 1rem;
+    }
+    .price h1{
+        font-size: 48px;
+    }  
+}
+@media (max-width:1024px){
+    .nav{
+        justify-content: space-between;
+        padding: 0 24px;
     }
     .menu ul li:not(:last-child){
         display: none;
@@ -330,20 +345,40 @@ html{
         position: fixed;
         bottom: 30px;;
         right: 10px;
-    }
+    } 
     .text-center h2{
         font-size: 36px;
+        margin-bottom: 1rem;
     }
     .text-center p {
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .card-area{
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
     .each-area{
         grid-template-columns: 1fr;
     }
-    .card-area{
-        padding: 48px 16px;
-        margin: 0;
-        width: 100%;
+    .member-type h3:first-child{
+        font-size: 24px;
     }
-    
+    .member-type h3:last-child{
+        font-size: 1rem;
+    }
+    .price h1{
+        font-size: 48px;
+    }
+}
+@media (min-width: 1200px){
+    .member-type h3:first-child{
+        font-size: 24px;
+    }
+    .member-type h3:last-child{
+        font-size: 1rem;
+    }
+    .price h1{
+        font-size: 48px;
+    }   
 }

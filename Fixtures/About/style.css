@@ -418,7 +418,7 @@ main {
 }
 
 /* for repsonsive */
-@media (max-width:1200px){
+@media (max-width:1024px){
     html{
         font-size: 14px;
     }
@@ -437,5 +437,20 @@ main {
         position: fixed;
         bottom: 30px;;
         right: 10px;
+    }
+
+    p {
+        color: transparent;
+    }
+
+    #time {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    #date {
+        font-weight: 500;
+        line-height: 1.25rem;
+        font-size: .875rem;
     }
 }

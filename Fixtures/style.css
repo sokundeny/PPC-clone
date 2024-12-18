@@ -176,6 +176,7 @@ main {
 
 .next-event-box-body {
     padding: 30px 0;
+    touch-action: pan-y;
     overflow: hidden;
     
 }
@@ -189,15 +190,17 @@ main {
     flex-flow: row;
     box-sizing: content-box;
     /* transform: translate3d(-231.959px, 0px, 0px); */
-    /* transform: translateZ(0); */
+    transform: translateZ(0);
+    transition-property: transform;
     
 }
 
 .swiper-item {
+    
     height: 100%;
     width: 301px;
     margin-right: 12px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     position: relative;
     display: block;
 }
@@ -351,15 +354,29 @@ main {
     background-color: hsl(0, 0%, 100%);
 }
 
+.league-image {
+    position: relative;
+}
+
 #ImageBottom {
     z-index: 0;
     object-fit: cover; 
-    filter: blur(10px) saturate(150%); 
+    filter: blur(16px) saturate(150%); 
     opacity: 0.3;
     border-radius: 0;
     position: absolute;
-    top: 10;
-    left: 49px;
+    max-width: 100%;
+    display: block;
+    inset: 0;
+    /* top: 10; */
+    /* left: 49px; */
+    transform: translateX(0) 
+    translateY(0.25rem) 
+    rotate(0) 
+    skewX(0)
+    skewY(0) 
+    scaleX(1.05) 
+    scaleY(1.05);
 }
 
 #imageAbove {
@@ -466,5 +483,31 @@ main {
     .select-league-box h1 {
         font-size: 1.5rem; /* 24px */
         line-height: 2rem; /* 32px */ 
+    }
+
+    #card-3, #card-4 {
+        display: none;
+    }
+
+    .swiper-item {
+        width: 485.5px;
+        
+    }
+
+    .league-box-items {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1rem; /* 16px */
+    }
+}
+
+
+@media (max-width:640px) {
+    .swiper-item {
+        width: 599px;
+    }
+
+    #card-2 {
+        display: none;
     }
 }
